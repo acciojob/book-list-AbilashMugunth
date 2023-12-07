@@ -19,7 +19,7 @@ addBookBtn.addEventListener("click", () => {
 
   let delBtn = document.createElement("button");
   delBtn.innerText = "X";
-  delBtn.className = "delete-btn";
+  delBtn.className = "delete";
 
   tr.append(titleCell, authorCell, isbnCell, delBtn);
   tbody.appendChild(tr);
