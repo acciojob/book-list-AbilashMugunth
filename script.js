@@ -17,11 +17,13 @@ addBookBtn.addEventListener("click", () => {
   let isbnCell = document.createElement("td");
   isbnCell.innerText = inputISBN.value;
 
+let delBtnCell = document.createElement('td');
   let delBtn = document.createElement("button");
   delBtn.innerText = "X";
   delBtn.className = "delete";
+  delBtnCell.appendChild(delBtn)
 
-  tr.append(titleCell, authorCell, isbnCell, delBtn);
+  tr.append(titleCell, authorCell, isbnCell, delBtnCell);
   tbody.appendChild(tr);
 
   delBtn.addEventListener("click", () => {
