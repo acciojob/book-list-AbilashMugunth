@@ -27,7 +27,7 @@ let delBtnCell = document.createElement('td');
   tbody.appendChild(tr);
 
   delBtn.addEventListener("click", () => {
-    delBtn.parentElement.remove();
+    delBtn.parentNode.parentNode.remove();
   });
 
   form.reset();
