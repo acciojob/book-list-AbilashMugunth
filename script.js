@@ -3,6 +3,7 @@ let inputAuthor = document.querySelector("#author");
 let inputISBN = document.querySelector("#isbn");
 let addBookBtn = document.querySelector("#submit");
 let tbody = document.querySelector("#book-list");
+let form = document.querySelector("form");
 
 addBookBtn.addEventListener("click", () => {
   let tr = document.createElement("tr");
@@ -26,4 +27,6 @@ addBookBtn.addEventListener("click", () => {
   delBtn.addEventListener("click", () => {
     delBtn.parentElement.remove();
   });
+
+  form.reset();
 });
